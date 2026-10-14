@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surat kecil untuk Seng 💌</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="blur-in-start">
+
+  <div id="floating-bg"></div>
+
+  <!-- canvas confetti, dipakai oleh js/script.js -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- titik navigasi kecil di atas: halaman 4 dari 4 -->
+  <nav class="page-nav">
+    <a href="index.html"></a>
+    <a href="gallery.html"></a>
+    <a href="reasons.html"></a>
+    <a href="letter.html" class="active"></a>
+  </nav>
+
+  <!-- ================================================================
+       HALAMAN 4 — THE BIRTHDAY LETTER & CELEBRATION
+  ================================================================= -->
+  <section id="letter-page" class="page">
+    <div class="letter-card">
+      <h2 class="letter-title">Selamat ulang tahun ke-25, Seng.</h2>
+
+      <!-- ⬇⬇⬇ GANTI GIF DI SINI (Final Celebration GIF) ⬇⬇⬇
+           Masih DUMMY: assets/celebration.gif -->
+      <div class="celebration-gif-frame">
+        <img src="assets/celebration.gif" alt="celebration gif">
+      </div>
+      <!-- ⬆⬆⬆ AKHIR CELEBRATION GIF ⬆⬆⬆ -->
+
+      <!-- -----------------------------------------------------------
+           TEKS SURAT ULANG TAHUN
+           Isi suratnya ADA DI FILE js/script.js, di variabel
+           `letterMessage`. Edit di sana, bukan di sini.
+      ----------------------------------------------------------- -->
+      <div class="letter-box">
+        <p id="letter-text"></p>
+      </div>
+
+      <p class="signature">— seseorang yang bersyukur bisa bersamamu 💌</p>
+    </div>
+
+    <div class="page-buttons">
+      <a href="reasons.html" class="nav-btn secondary">&lt; back to photos</a>
+    </div>
+  </section>
+
+  <footer>made with love, just for you 🩶</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Moments 💕</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="blur-in-start">
+
+  <div id="floating-bg"></div>
+
+  <!-- titik navigasi kecil di atas: halaman 2 dari 4 -->
+  <nav class="page-nav">
+    <a href="index.html"></a>
+    <a href="gallery.html" class="active"></a>
+    <a href="reasons.html"></a>
+    <a href="letter.html"></a>
+  </nav>
+
+  <!-- ================================================================
+       HALAMAN 2 — INTERACTIVE PHOTO SLIDESHOW
+  ================================================================= -->
+  <section id="gallery" class="page">
+    <h2 class="gallery-heading">Kenangan Kita <span class="heart">🩷</span></h2>
+    <p class="gallery-sub">Beberapa momen sederhana yang ingin kusimpan baik-baik.</p>
+
+    <div class="slideshow-wrap">
+
+      <!-- ⬇ GIF dekorasi kecil di pojok — masih DUMMY: assets/sparkle1.gif -->
+      <div class="corner-deco">
+        <img src="assets/sparkle1.gif" alt="sparkle decoration">
+      </div>
+
+      <div class="slide-stage">
+        <button class="arrow-btn" id="prevBtn" aria-label="previous photo">‹</button>
+
+        <div class="photo-stage" id="photoStage">
+          <div class="polaroid" id="polaroid">
+            <div class="photo-frame">
+              <!-- ⬇ FOTO-FOTO ASLI DIATUR LEWAT js/gallery.js
+                   (di array `photos` bagian atas file itu). -->
+              <img id="currentPhoto" src="photos/photo1.jpg" alt="memory one">
+            </div>
+          </div>
+
+          <!-- ⬇ GIF dekorasi di sisi kiri-bawah polaroid —
+               masih DUMMY: assets/sparkle2.gif -->
+          <div class="bottom-left-deco">
+            <img src="assets/sparkle2.gif" alt="sparkle decoration">
+          </div>
+        </div>
+
+        <button class="arrow-btn" id="nextBtn" aria-label="next photo">›</button>
+      </div>
+
+      <p class="caption" id="currentCaption">Aku senang punya banyak momen sederhana yang bisa dikenang bersamamu.</p>
+
+      <div class="dots" id="dots">
+        <button class="dot active" data-index="0" aria-label="photo 1"></button>
+        <button class="dot" data-index="1" aria-label="photo 2"></button>
+        <button class="dot" data-index="2" aria-label="photo 3"></button>
+      </div>
+
+      <p class="counter" id="counter">foto 1 dari 3</p>
+    </div>
+
+
+
+    <section style="width:min(92%,680px);margin:2rem auto;padding:1.25rem;border-radius:22px;background:rgba(255,255,255,.72);box-shadow:0 8px 28px rgba(100,40,90,.10);color:#5d4058;text-align:center;">
+      <h3 style="margin:.25rem 0 .5rem;">Satu video untuk dikenang 🎞️</h3>
+      <p style="margin:.25rem 0 1rem;">Momen kecil kita, yang semoga tetap terasa hangat saat ditonton lagi.</p>
+      <video controls playsinline preload="metadata" style="display:block;width:100%;max-height:70vh;border-radius:16px;background:#17121b;">
+        <source src="videos/kenangan-seng.mov" type="video/quicktime">
+        Browser ini mungkin tidak mendukung format video tersebut.
+      </video>
+    </section>
+
+    <section style="width:min(92%,680px);margin:1rem auto 2rem;padding:1.25rem;border-radius:22px;background:rgba(255,255,255,.72);box-shadow:0 8px 28px rgba(100,40,90,.10);color:#5d4058;text-align:center;">
+      <h3 style="margin:.25rem 0 .5rem;">Lagu untuk hari spesialmu 🎵</h3>
+      <p style="margin:.25rem 0 1rem;"><strong>Monokrom — Tulus</strong></p>
+      <p style="margin:.25rem 0 1rem;">Putar video musik resmi di bawah ini. Jika musik tidak langsung berjalan, tekan tombol putar.</p>
+      <div style="position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;">
+        <iframe src="https://www.youtube-nocookie.com/embed/QqJ-Vp8mvbk" title="TULUS - Monokrom (Official Music Video)" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p style="font-size:.9rem;margin:.8rem 0 0;">Video resmi: <a href="https://www.youtube.com/watch?v=QqJ-Vp8mvbk" target="_blank" rel="noopener noreferrer">TULUS — Monokrom</a></p>
+    </section>
+
+    <div class="page-buttons">
+      <a href="index.html" class="nav-btn secondary">Kembali</a>
+      <a href="reasons.html" class="nav-btn">Lanjutkan ♡</a>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
